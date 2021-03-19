@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="static/css/font-face.css" rel="stylesheet" media="all">
+    <link href="static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="static/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="static/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="static/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="static/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="static/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="static/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="static/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="static/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="static/vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
+    <!-- Main CSS-->
+    <link href="static/css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="profile">
+                            <img src="static/images/icon/logo.png" alt="CoolAdmin" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="profile">
+                                <i class="fas fa-tachometer-alt"></i>Main Page</a>
+                                                  </li>
+                        <li>
+                            <a href="arbitragelogin">
+                                <i class="fas fa-chart-bar"></i>Arbitrage</a>
+                        </li>
+                        <li>
+                            <a href="faqlogin">
+                                <i class="far fa-check-square"></i>FAQ</a>
+                        </li>
+                        
+                                                    </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="profile">
+                    <img src="static/images/icon/logo.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="profile">
+                                <i class="fas fa-tachometer-alt"></i>Main Page</a>
+                            
+                        </li>
+                        <li>
+                            <a href="arbitragelogin">
+                                <i class="fas fa-chart-bar"></i>Arbitrage</a>
+                        </li>
+                        <li>
+                            <a href="faqlogin">
+                                <i class="far fa-check-square"></i>FAQ</a>
+                        </li>
+                    </ul>
+                    </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p35">
+                <div class="header3-wrap">
+                    
+                    <div class="header__navbar">
+                        <ul class="list-unstyled">
+                            <li class="has-sub">
+                                <a href="logout">
+                                  <h4><i class="fa fa-arrows-alt blackiconcolor"></i>Log out</h4>
+                                    <span class="bot-line"></span>
+                                </a>
+                                
+                            </li>
+                            
+                            <li>
+                                <a href="subscriptionlogin">
+                                    <h4><i class="fa fa-dollar"></i>Subscription</h4>
+                                    <span class="bot-line "></span></a>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">
+                                    <h4><i class="fa fa-plus-square blackiconcolor"></i>Support</h4>
+                                    <span class="bot-line"></span></a>
+                                <ul class="header3-sub-list list-unstyled">
+                                    
+                                    <li>
+                                        <a href="https://www.instagram.com/bahram.bahmanov/">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/people/Bahram-Bahmanov/100007024188654">Facebook</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                {% block content %}
+                                {% endblock %}
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="header__tool">
+                        <div class="header-button-item has-noti js-item-menu">
+                            
+
+                        </div>
+                        
+                        <div class="account-wrap">
+                            <div class="account-item account-item--style2 clearfix js-item-menu">
+                                
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT--------------------------------------------------
+          -------------------------------------------------------
+        --------------------------------------------------------------
+      -->
+
+
+            <div class="main-content">
+              <div class="price-heading clearfix">
+                </div>
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                      
+                      <h1 class='abb large-title'>Best Arbitrage Website</h1></br>
+					  <p>
+						  This  idea  came  to  me  almost  one  year  ago.
+                	I was searching the internet for some additional earning because it was a hard period in my life.
+					Suddenly my friend told me that there is such kind of thing that seems very interesting .
+					So as we are the programmers we decided to create ARBITRAGE BETTING BOT .
+					All that you will have to do is just to have accounts on betting Website !
+					The rest will do our bot for you !
+					You can read more in info tab .
+					Let's start earning together !
+					Good Luck ! 
+					</p>
+                      
+                        <div class="row">
+                            <div class="col-md-12">
+  <!--Information------------------------------------------------------->
+                              <div id="generic_price_table">
+                              <section>
+                              <div class="container">
+                              <div class="row">
+                              <div class="col-md-12">
+                                  <div class="price-heading clearfix">
+
+                              </div>
+                              </div>
+                              </div>
+                              <div class="container">
+                              </div>
+                              </div>
+                              </section>
+                              </div>
+<!--Information------------------------------------------------------------------->
+
+                                <div class="overview-wrap">
+
+                                    <h2 class="title-1">Statistics Overview</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>4</h2>
+                                                <span>Total Registered Accounts</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart1"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-shopping-cart"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>114</h2>
+                                                <span>Number of Arbs placed</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart2"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-calendar-note"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>9</h2>
+                                                <span>Number Bookmakers</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart3"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-money"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>$3,586</h2>
+                                                <span>Total Earning in Month</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart4"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2">recent reports</h3>
+                                        <div class="chart-info">
+                                            <div class="chart-info__left">
+                                                <div class="chart-note">
+                                                    <span class="dot dot--blue"></span>
+                                                    <span>Arb Placed</span>
+                                                </div>
+                                                <div class="chart-note mr-0">
+                                                    <span class="dot dot--green"></span>
+                                                    <span>Earnings</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-info__right">
+                                                <div class="chart-statis">
+                                                    <span class="index incre">
+                                                        <i class="zmdi zmdi-long-arrow-up"></i>25%</span>
+                                                    <span class="label">Accounts</span>
+                                                </div>
+                                                <div class="chart-statis mr-0">
+                                                    <span class="index decre">
+                                                        <i class="zmdi zmdi-long-arrow-up"></i>10%</span>
+                                                    <span class="label">Bookmakers</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recent-report__chart">
+                                            <canvas id="recent-rep-chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card chart-percent-card">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5">Bonus Rollovers %</h3>
+                                        <div class="row no-gutters">
+                                            <div class="col-xl-6">
+                                                <div class="chart-note-wrap">
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--blue"></span>
+                                                        <span>Rollovered</span>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--red"></span>
+                                                        <span>Rest</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="percent-chart">
+                                                    <canvas id="percent-chart"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Photo  Optimization    -->
+
+                      <div class="row m-t-25">
+	                         <h2 class="title-1 m-b-25">Optimized for all types of devises !</h2></br>
+	                        
+                  <div class="row">
+                        <div class="col-md-6">
+                          <h3></h3>
+                          <ul>
+                            <img src="static/images/imacipadiphone.png" alt="Italian Trulli" style="width:700px;height:336px;">
+                              </ul>
+                          </ul>
+                        </div>
+                        <div class="col-md-6 text-left">
+                          <div>
+                            <h3>Optimization</h3></br>
+                            <ol class="vue-ordered">
+                              <li>
+                                Arbbet cares about optimization for our clients!
+                              </li>
+                              <li>You can work from any of your devices! </li>
+                              <li>For sure the best one is your notebook or pc</li>
+                              <li>
+                                But you can still easy use it from your phone!
+                                <ul class="vue-list-inner">
+                                  <li>Pc or Notebook
+                                  </li>
+                                  <li>Tablet or Ipad</li>
+                                  <li>Your SmartPhone</li>
+                                </ul>
+                              </li>
+                              <li>We happy to see you here ! </li>
+                              <li>Lets start earning money!</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                        
+                        <!-- Photo  Optimization    -->
+                        
+                       
+                        
+                        <div class="row m-t-25">
+	                         		<h2 class="title-1 m-b-25">We Accept Crypto! Pay With Bitcoin, Etherium or USDT!</h2></br>
+							 <div class="row">
+							 <div class="col-md-6">
+							 <h3></h3>
+							 <ul>
+                              		<img src="static/images/crypto3.png" alt="Italian Trulli" style="width:400px;height:400px;">
+                              </ul>
+                          </ul>
+                        </div>
+                        
+                        
+                        <div class="col-md-6 text-left">
+                          <div>
+                            <h3>Payment</h3></br>
+                            <ol class="vue-ordered">
+                              <li>
+                                We Accept Crypto! Pay With Bitcoin, Etherium or USDT!
+                              </li>
+                              <li>You can pay here with Bitcoin, Etherium or Xrp .</li>
+                              <li>It is the most safe way of payment!</li>
+                              <li>
+                               How to pay?
+                                <ul class="vue-list-inner">
+                                  <li>After registration just go to Subscription 
+                                  </li>
+                                  <li>Press the buy button</li>
+                                  <li>After payment send the screenshot to os in social medias! instagram or facebook.</li>
+                                </ul>
+                              </li>
+                              <li>We respect all our clients !</li>
+                              <li>Do not hesitate to ask !</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        
+                        
+                        
+                                <!-- END Photo-->
+                                
+                                
+                               
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h2 class="title-1 m-b-25">Earnings Per Day</h2></br>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>date</th>
+                                                <th>Arb Num</th>
+                                                <th>Name</th>
+                                                <th class="text-right">Income</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2021-01-29 05:57</td>
+                                                <td>9</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$271.59</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 01:22</td>
+                                                <td>3</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$641.43</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 02:12</td>
+                                                <td>5</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$369.74</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 23:06</td>
+                                                <td>1</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$439.93</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 19:03</td>
+                                                <td>8</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$134.78</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 05:57</td>
+                                                <td>7</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$199.08</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 19:10</td>
+                                                <td>6</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$367.34</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2021-01-29 00:43</td>
+                                                <td>4</td>
+                                                <td>Account</td>
+                                                <td class="text-right">$576.87</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                             <!--     Top         -->
+                            
+                            <div class="col-lg-3">
+                                <h2 class="title-1 m-b-25">Top Bookmakers </h2>
+                                <div class="au-card au-card--bg-blue au-card-top-countries m-b-40">
+                                    <div class="au-card-inner">
+                                        <div class="table-responsive">
+                                            <table class="table table-top-countries">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Bet365</td>
+                                                        <td class="text-right">$119,366.96</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bet-at-home</td>
+                                                        <td class="text-right">$70,261.65</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pinnacle</td>
+                                                        <td class="text-right">$46,399.22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Betfair</td>
+                                                        <td class="text-right">$35,364.90</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GGbet</td>
+                                                        <td class="text-right">$20,366.96</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tipico</td>
+                                                        <td class="text-right">$10,366.96</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Smarkets</td>
+                                                        <td class="text-right">$5,366.96</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sportmarket</td>
+                                                        <td class="text-right">$1639.32</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Top -->
+                        
+                        
+                        <!-- News-->
+                        
+                        <h2 class="title-1 m-b-25">NEWS</h2>
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-card-title" style="background-image:url('static/images/bg-title-01.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3>
+                                            <i class="zmdi zmdi-account-calendar"></i>26 January, 2021</h3>
+                                        <button class="au-btn-plus">
+                                            <i class="zmdi zmdi-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="au-task js-list-load">
+                                        <div class="au-task__title">
+                                            <p>I started writing website</p>
+                                        </div>
+                                        <div class="au-task-list js-scrollbar3">
+                                            <div class="au-task__item au-task__item--danger">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Meeting about plan</a>
+                                                    </h5>
+                                                    <span class="time">10:00 AM</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--warning">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Create new task </a>
+                                                    </h5>
+                                                    <span class="time">11:00 AM</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--primary">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Meeting about plan </a>
+                                                    </h5>
+                                                    <span class="time">02:00 PM</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--success">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Create new task </a>
+                                                    </h5>
+                                                    <span class="time">03:30 PM</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--danger js-load-item">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Meeting about plan </a>
+                                                    </h5>
+                                                    <span class="time">10:00 AM</span>
+                                                </div>
+                                            </div>
+                                            <div class="au-task__item au-task__item--warning js-load-item">
+                                                <div class="au-task__item-inner">
+                                                    <h5 class="task">
+                                                        <a href="#">Create new task</a>
+                                                    </h5>
+                                                    <span class="time">11:00 AM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="au-task__footer">
+                                            <button class="au-btn au-btn-load js-load-btn">load more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- -->
+                            
+                            <!-- Clients-->
+                            
+                            <div class="col-lg-6">
+                                <div class="au-card au-card--no-shadow au-card--no-pad m-b-40">
+                                    <div class="au-card-title" style="background-image:url('static/images/bg-title-02.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3>
+                                            <i class="zmdi zmdi-comment-text"></i>Our Clients</h3>
+                                        <button class="au-btn-plus">
+                                            <i class="zmdi zmdi-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="au-inbox-wrap js-inbox-wrap">
+                                        <div class="au-message js-list-load">
+                                            <div class="au-message__noti">
+                                                <p>Lets see what do they say :)
+                                                    <span></span>
+
+                                                </p>
+                                            </div>
+                                            <div class="au-message-list">
+                                                <div class="au-message__item unread">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="static/images/icon/avatar-02.jpg" alt="John Smith">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">John Smith</h5>
+                                                                <p>For new Website it is cool!</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item unread">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap online">
+                                                                <div class="avatar">
+                                                                    <img src="static/images/icon/avatar-03.jpg" alt="Nicholas Martinez">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Nicholas Martinez</h5>
+                                                                <p>I am really HAPPY that i found this service !</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap online">
+                                                                <div class="avatar">
+                                                                    <img src="static/images/icon/avatar-04.jpg" alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Michelle Sims</h5>
+                                                                <p>Good Luck with new project!</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="static/images/icon/avatar-05.jpg" alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">NoName</h5>
+                                                                <p>BB,ZH,KM</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item js-load-item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap online">
+                                                                <div class="avatar">
+                                                                    <img src="static/images/icon/avatar-04.jpg" alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Michelle Sims</h5>
+                                                                <p>Cool!</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="au-message__item js-load-item">
+                                                    <div class="au-message__item-inner">
+                                                        <div class="au-message__item-text">
+                                                            <div class="avatar-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="static/images/icon/avatar-05.jpg" alt="Michelle Sims">
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <h5 class="name">Michelle Sims</h5>
+                                                                <p>Nice one</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="au-message__footer">
+                                                <button class="au-btn au-btn-load js-load-btn">load more</button>
+                                            </div>
+                                        </div>
+                                        <div class="au-chat">
+                                            <div class="au-chat__title">
+                                                <div class="au-chat-info">
+                                                    <div class="avatar-wrap online">
+                                                        <div class="avatar avatar--small">
+                                                            <img src="static/images/icon/avatar-02.jpg" alt="John Smith">
+                                                        </div>
+                                                    </div>
+                                                    <span class="nick">
+                                                        <a href="#">John Smith</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="au-chat__content">
+
+                                            </div>
+                                            <div class="au-chat-textfield">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2021 Arbbet. All rights reserved. Website by <a href="">Secret Wins</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="static/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="static/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="static/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="static/vendor/slick/slick.min.js">
+    </script>
+    <script src="static/vendor/wow/wow.min.js"></script>
+    <script src="static/vendor/animsition/animsition.min.js"></script>
+    <script src="static/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="static/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="static/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="static/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="static/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="static/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="static/vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
